@@ -5,6 +5,7 @@ using static System.Console;
 Clear();
 string[] elements = new string[4] {"Hello", "2", "world", ":-)"};
 string[] elements2 = NewArray(elements);
+PrintArray(elements2);
 
 string[] NewArray(string[] stringArray)
 {
@@ -19,5 +20,14 @@ string[] NewArray(string[] stringArray)
          }
      }
      return result;
+}
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+         Write($"{array[i]} ");
+    }
+    WriteLine();
 }
 
